@@ -1,9 +1,9 @@
 # Recap of naming
 
-- File names named as function names - need to use nouns such that it gives an indication of the concepts or content. For ex. get_color_and_pair_number.py , here the file name used is like a function name.
-- Funtion names should be indicating an action or what it does. ex. ColorCatalogue() could be named as PrintColorCatalogue()
-- Choose right funtion name - function name MapColornamestoPairnumber() gives a first impression that the names and pair number are mapped and could be used in the program somewhere. But in fact all it was doing was just print the manual. hence renaming to a suitable name is necessary
-- Usage of magic numbers - for now the number of minor colors and major colors combination add to 25 if thisnumber is used, this poses a problem when the color codes are extended in future
+- File names as function names - need to use nouns such that it denotes the purpose of the file. For example- get_color_and_pair_number.py , here the file name used is like a function name. A name like color_pair_translation.py would express its purpose.
+- A function name needs to indicate its action. Example- ColorCatalogue() could be named as PrintColorCatalogue()
+- Function name MapColornamestoPairnumber() gives a first impression that the names and pair number are mapped and could be used in the program somewhere. But in fact all it was doing was just print the manual. Hence renaming to a suitable name is necessary
+- Usage of magic numbers - for now the number of minor colors and major colors combination add to 25. However, the number 25 in a corner of the code would be forgotten when we add more colors.
 
 ```c
 void MapColornamestoPairnumber() {
@@ -12,10 +12,6 @@ void MapColornamestoPairnumber() {
   }
 }
 ```
-
-## Segregated API vs implementation
-
-[Notice well-named functions/files](https://github.com/clean-code-craft-tcq-3/well-named-in-cpp-Veeresh-Ranjan/pull/1/files)
 
 ## Test and production code
 
