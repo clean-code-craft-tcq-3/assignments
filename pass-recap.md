@@ -1,6 +1,22 @@
 #  Recap - Fix production code to pass all tests
 
-Keep test code such as test cases and test stubs separate from production code.
+##Keep test code such as test cases and test stubs separate from production code.
+
+Production code should be agnostic of test environment or production environment. 
+
+```cs
+int returnCode = 0;
+          float celsius = ConvertFarenheitToCelsius(farenheit);
+          switch (environment)
+          {
+            case "Test":
+              returnCode = NetworkAlert.AlertNetwork(celsius);
+            break;
+           case "Production":
+             returnCode = NetworkAlertStub.AlertNetwork(celsius);
+           break;
+          }
+```
 
 ## Bug in Production code using 'for' indexes
 
