@@ -7,11 +7,12 @@ An example of test coverage -
 
 - [range tests](https://github.com/clean-code-craft-tcq-3/simple-monitor-in-cpp-arpit091429/pull/1/files)
 - [testing whole and parts](https://github.com/clean-code-craft-tcq-3/simple-monitor-in-cpp-YogeshGovindaraju/blob/c08a64d7f41789554d4302267a55ae66d1c8a496/checkerTest.h)
-- [re-usable `BatteryVital` to reduce duplicated checks](https://github.com/clean-code-craft-tcq-3/simple-monitor-in-py-bipin-raju-007/blob/8997b3be0d7abbca42ff1018efa2ee5f02a2a129/check_limits.py)
+
+## Reduce duplication, increase re-use
+
+[Re-usable `BatteryVital` to reduce duplicated checks](https://github.com/clean-code-craft-tcq-3/simple-monitor-in-py-bipin-raju-007/blob/8997b3be0d7abbca42ff1018efa2ee5f02a2a129/check_limits.py)
 
 ## Test the parts, then test the whole
-
-Would be even better if the range comparison was separated into a function, e.g., `isReadingInRange`
 
 ```c
   assert(isBatteryTemperatureOk(25));
@@ -28,6 +29,8 @@ Would be even better if the range comparison was separated into a function, e.g.
   
   assert(batteryIsOk(25.0, 70.0, 0.7));
 ```
+
+Would be even better if the range comparison was separated into a function, e.g., `isReadingInRange`
 
 ## Un-intended shared state and incomplete tests
 
