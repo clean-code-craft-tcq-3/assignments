@@ -23,6 +23,8 @@ Fri - session / recap + next
 
 ## Try It
 
+[Streaming project](streaming-project.md)
+
 [Add functionality using TDD](tdd-add-func.md) and [recap](tdd-recap.md)
 
 > Complete the ranges-functionality and tests, if not already done!
